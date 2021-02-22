@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name eec)(type KiCad)(uri ${KIPRJMOD}/eec.pretty)(options "")(descr ""))
+  (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/teensy.pretty)(options "")(descr ""))
+  (lib (name Resistors_THT)(type KiCad)(uri ${KIPRJMOD}/Resistors_THT.pretty)(options "")(descr ""))
+  (lib (name misc)(type KiCad)(uri ${KIPRJMOD}/misc.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/2021-01-16_04-43-04/footprints.pretty)(options "")(descr ""))
+)

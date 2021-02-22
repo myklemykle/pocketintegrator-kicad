@@ -1,0 +1,45 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Kycon STX-3120-5B-284C
+#
+DEF STX-3120-5B-284C J 0 0 Y Y 1 L N
+F0 "J" 0 100 50 H V L CNN 
+F1 "STX-3120-5B-284C" 0 200 50 H V L CNN 
+F2 "Kycon-STX-3120-5B-284C-0-0-*" 0 300 50 H I L CNN 
+F3 "http://domino2.kycon.com/2013Catalogpage/Audio%20Jacks/STX3120.pdf" 0 400 50 H I L CNN 
+F4 "Conn" 0 500 50 H I L CNN "category"
+F5 "yes" 0 600 50 H I L CNN "lead free"
+F6 "7f67c0265978e76d" 0 700 50 H I L CNN "library id"
+F7 "Kycon" 0 800 50 H I L CNN "manufacturer"
+F8 "Phone Connectors 3.5mm PCB STEREO JAK 5P W/SWITCH BLUE" 0 900 50 H I L CNN "mouser description"
+F9 "806-STX-31205B284C" 0 1000 50 H I L CNN "mouser part number"
+F10 "CONN_JACK_PTH" 0 1100 50 H I L CNN "package"
+F11 "yes" 0 1200 50 H I L CNN "rohs"
+F12 "+85°C" 0 1300 50 H I L CNN "temperature range high"
+F13 "-25°C" 0 1400 50 H I L CNN "temperature range low"
+DRAW
+X 1 1 -100 0 550 L 40 0 1 1 P 
+X 5 5 -100 -100 390 L 40 0 1 1 P 
+X 4 4 -100 -200 150 L 40 0 1 1 P 
+X 2 2 -100 -400 250 L 40 0 1 1 P 
+X 3 3 -100 -300 150 L 40 0 1 1 P 
+P 2 1 1 0 -560 -100 -530 -150 N
+P 2 1 1 0 -530 -150 -490 -100 N
+P 2 1 1 0 -220 -170 -250 -150 N
+P 2 1 1 0 -250 -150 -250 -200 N
+P 2 1 1 0 -280 -170 -250 -150 N
+P 2 1 1 0 -410 -400 -380 -350 N
+P 2 1 1 0 -380 -350 -350 -400 N
+P 2 1 1 0 -220 -330 -250 -350 N
+P 2 1 1 0 -250 -350 -250 -300 N
+P 2 1 1 0 -280 -330 -250 -350 N
+P 2 1 1 0 -700 -100 -700 -400 N
+P 2 1 1 0 -700 -400 -600 -400 N
+P 2 1 1 0 -600 -400 -600 -100 N
+P 2 1 1 0 -700 -100 -600 -100 N
+P 2 1 1 0 -650 0 -650 -100 N
+ENDDRAW
+ENDDEF
+#
+# End Library
