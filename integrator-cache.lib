@@ -80,23 +80,43 @@ X MountPin MP 50 -500 120 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_CP1_Small
+# Device_C_Small
 #
-DEF Device_CP1_Small C 0 10 N N 1 F N
+DEF Device_C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device_CP1_Small" 10 -80 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- CP_*
+ C_*
 $ENDFPLIST
 DRAW
-A 0 -140 125 1186 614 0 1 12 N -60 -30 60 -30
+P 2 0 1 13 -60 -20 60 -20 N
 P 2 0 1 12 -60 20 60 20 N
-P 2 0 1 0 -50 60 -30 60 N
-P 2 0 1 0 -40 50 -40 70 N
 X ~ 1 0 100 80 D 50 50 1 1 P
 X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Schottky_Small
+#
+DEF Device_D_Schottky_Small D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "Device_D_Schottky_Small" -280 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 10 30 -40 -30 0 30 40 30 -40 N
+P 6 0 1 10 -50 30 -50 40 -30 40 -30 -40 -10 -40 -10 -30 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -114,34 +134,6 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# FXOS8700CQ_FXOS8700CQ
-#
-DEF FXOS8700CQ_FXOS8700CQ U 0 40 N Y 1 L N
-F0 "U" 0 0 50 H I L BNN
-F1 "FXOS8700CQ_FXOS8700CQ" 0 0 50 H I L BNN
-F2 "FSOS8700CQ_PKG" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-DRAW
-S -600 -700 600 600 0 0 10 f
-X VDDIO P$1 -800 300 200 R 40 40 0 0 B
-X SA1 P$10 800 -300 200 L 40 40 0 0 B
-X INT1 P$11 800 -100 200 L 40 40 0 0 B
-X GND P$12 800 100 200 L 40 40 0 0 B
-X RES2 P$13 800 300 200 L 40 40 0 0 B
-X VDD P$14 200 800 200 D 40 40 0 0 B
-X NC P$15 0 800 200 D 40 40 0 0 B
-X RST P$16 -200 800 200 D 40 40 0 0 B
-X BYP P$2 -800 100 200 R 40 40 0 0 B
-X RES1 P$3 -800 -100 200 R 40 40 0 0 B
-X SCL P$4 -800 -300 200 R 40 40 0 0 B
-X GND1 P$5 -800 -500 200 R 40 40 0 0 B
-X SDA P$6 -200 -900 200 U 40 40 0 0 B
-X SA0 P$7 0 -900 200 U 40 40 0 0 B
-X CRST P$8 200 -900 200 U 40 40 0 0 B
-X INT2 P$9 800 -500 200 L 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
@@ -232,6 +224,37 @@ X 1 1 100 0 100 R 40 0 1 1 P
 X 2 2 900 0 100 L 40 0 1 1 P
 X MNT_1 3 100 -200 100 R 40 40 1 1 P
 X MNT_2 4 100 -300 100 R 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# icm-20600_ICM-20600
+#
+DEF icm-20600_ICM-20600 U 0 40 Y Y 1 L N
+F0 "U" -501 701 50 H V L BNN
+F1 "icm-20600_ICM-20600" -501 -802 50 H V L BNN
+F2 "PQFN50P250X300X97-14N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "ICM-20600" 0 0 50 H I L BNN "MP"
+F5 "None" 0 0 50 H I L BNN "PRICE"
+F6 "The center Exposed Pad (EP), for MPU devices is a No Connect (NC) pad. To avoid package stress, do not solder the EP to the PCB. Please refer to the document “AN-IVS-0002A-00”. As a result of these guidelines, the exposed pad has not been included on the PCB footprint. We’ve added a keep-out area under the exposed pad. Please don’t route traces or vias under the part, on the same side of the board" 0 0 50 H I L BNN "NOTES"
+F7 "PQFN-14N TDK-InvenSense" 0 0 50 H I L BNN "PACKAGE"
+F8 "TDK InvenSense" 0 0 50 H I L BNN "MF"
+F9 "Unavailable" 0 0 50 H I L BNN "AVAILABILITY"
+F10 "Low-Power, High-Performance Integrated 6-Axis MEMS MotionTracking Device in 2.5mm x 3mm Package" 0 0 50 H I L BNN "DESCRIPTION"
+DRAW
+S -500 -700 500 700 0 0 10 f
+X AD0/SDO 1 -600 300 100 R 40 40 0 0 O
+X FSYNC/NC 10 -600 -200 100 R 40 40 0 0 I
+X REGOUT 11 600 -300 100 L 40 40 0 0 P
+X ~CS 12 -600 0 100 R 40 40 0 0 I
+X SCL/SCLK 13 -600 200 100 R 40 40 0 0 B
+X SDA/SDI 14 -600 100 100 R 40 40 0 0 B
+X INT1 4 600 200 100 L 40 40 0 0 O
+X VDDIO 5 600 600 100 L 40 40 0 0 W
+X GND 6 600 -600 100 L 40 40 0 0 W
+X RESV 7 600 -500 100 L 40 40 0 0 W
+X VDD 8 600 500 100 L 40 40 0 0 W
+X INT2 9 600 100 100 L 40 40 0 0 O
 ENDDRAW
 ENDDEF
 #
