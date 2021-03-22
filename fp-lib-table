@@ -4,4 +4,7 @@
   (lib (name Resistors_THT)(type KiCad)(uri ${KIPRJMOD}/Resistors_THT.pretty)(options "")(descr ""))
   (lib (name misc)(type KiCad)(uri ${KIPRJMOD}/misc.pretty)(options "")(descr ""))
   (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/2021-01-16_04-43-04/footprints.pretty)(options "")(descr ""))
+  (lib (name icm20600)(type KiCad)(uri ${KIPRJMOD}/icm20600.pretty)(options "")(descr ""))
+  (lib (name export)(type KiCad)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/export.pretty")(options "")(descr ""))
+  (lib (name exported)(type KiCad)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/exported.pretty")(options "")(descr ""))
 )

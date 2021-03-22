@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ICM-20600
+#
+DEF ICM-20600 U 0 40 Y Y 1 L N
+F0 "U" -501 701 50 H V L BNN
+F1 "ICM-20600" -501 -802 50 H V L BNN
+F2 "PQFN50P250X300X97-14N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "ICM-20600" 0 0 50 H I L BNN "MP"
+F5 "None" 0 0 50 H I L BNN "PRICE"
+F6 "The center Exposed Pad (EP), for MPU devices is a No Connect (NC) pad. To avoid package stress, do not solder the EP to the PCB. Please refer to the document “AN-IVS-0002A-00”. As a result of these guidelines, the exposed pad has not been included on the PCB footprint. We’ve added a keep-out area under the exposed pad. Please don’t route traces or vias under the part, on the same side of the board" 0 0 50 H I L BNN "NOTES"
+F7 "PQFN-14N TDK-InvenSense" 0 0 50 H I L BNN "PACKAGE"
+F8 "TDK InvenSense" 0 0 50 H I L BNN "MF"
+F9 "Unavailable" 0 0 50 H I L BNN "AVAILABILITY"
+F10 "Low-Power, High-Performance Integrated 6-Axis MEMS MotionTracking Device in 2.5mm x 3mm Package" 0 0 50 H I L BNN "DESCRIPTION"
+DRAW
+S -500 -700 500 700 0 0 10 f
+X INT1 4 600 200 100 L 40 40 0 0 O 
+X VDDIO 5 600 600 100 L 40 40 0 0 W 
+X GND 6 600 -600 100 L 40 40 0 0 W 
+X RESV 7 600 -500 100 L 40 40 0 0 W 
+X VDD 8 600 500 100 L 40 40 0 0 W 
+X INT2 9 600 100 100 L 40 40 0 0 O 
+X FSYNC/NC 10 -600 -200 100 R 40 40 0 0 I 
+X REGOUT 11 600 -300 100 L 40 40 0 0 P 
+X ~CS 12 -600 0 100 R 40 40 0 0 I 
+X AD0/SDO 1 -600 300 100 R 40 40 0 0 O 
+X SCL/SCLK 13 -600 200 100 R 40 40 0 0 B 
+X SDA/SDI 14 -600 100 100 R 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

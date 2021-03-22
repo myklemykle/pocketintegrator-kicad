@@ -1,4 +1,4 @@
-update=Sunday, February 21, 2021 at 11:56:29 AM
+update=Friday, March 19, 2021 at 09:43:45 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -9,17 +9,27 @@ version=1
 [eeschema]
 version=1
 LibDir=
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=integrator.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6002
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.1524
+MinTrackWidth=0.127
 MinViaDiameter=0.508
 MinViaDrill=0.254
 MinMicroViaDiameter=0.2
@@ -69,11 +79,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -241,7 +251,7 @@ dPairWidth=0.1524
 dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=+3.3v
+Name=+v supply
 Clearance=0.1524
 TrackWidth=0.5
 ViaDiameter=0.6858
@@ -251,13 +261,14 @@ uViaDrill=0.3302
 dPairWidth=0.1524
 dPairGap=0.254
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
+[pcbnew/Netclasses/2]
+Name=audio
+Clearance=0.1524
+TrackWidth=0.5
+ViaDiameter=0.6858
+ViaDrill=0.3302
+uViaDiameter=0.6858
+uViaDrill=0.3302
+dPairWidth=0.1524
+dPairGap=0.254
+dPairViaGap=0.25
