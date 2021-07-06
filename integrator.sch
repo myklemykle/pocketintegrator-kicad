@@ -256,18 +256,16 @@ $EndComp
 $Comp
 L power:Earth #PWR0102
 U 1 1 6012BDBE
-P 9650 4400
-F 0 "#PWR0102" H 9650 4150 50  0001 C CNN
-F 1 "Earth" H 9650 4250 50  0001 C CNN
-F 2 "" H 9650 4400 50  0001 C CNN
-F 3 "~" H 9650 4400 50  0001 C CNN
-	1    9650 4400
+P 9950 4900
+F 0 "#PWR0102" H 9950 4650 50  0001 C CNN
+F 1 "Earth" H 9950 4750 50  0001 C CNN
+F 2 "" H 9950 4900 50  0001 C CNN
+F 3 "~" H 9950 4900 50  0001 C CNN
+	1    9950 4900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9500 4500 9650 4400
-Wire Wire Line
-	9800 4600 9500 4600
+	9800 4900 9950 4900
 Wire Wire Line
 	9500 4700 9700 4700
 Wire Wire Line
@@ -355,22 +353,17 @@ Wire Wire Line
 	2350 1400 2350 850 
 Wire Wire Line
 	8550 1900 8550 1600
-Wire Wire Line
-	9800 4600 9800 5950
 $Comp
 L Device:R R6
 U 1 1 6054846D
-P 8850 4500
-F 0 "R6" H 8920 4546 50  0000 L CNN
-F 1 "4.7k" H 8920 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8780 4500 50  0001 C CNN
-F 3 "~" H 8850 4500 50  0001 C CNN
-	1    8850 4500
+P 9250 4150
+F 0 "R6" H 9320 4196 50  0000 L CNN
+F 1 "4.7k" H 9320 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9180 4150 50  0001 C CNN
+F 3 "~" H 9250 4150 50  0001 C CNN
+	1    9250 4150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8500 4600 8600 4600
-Connection ~ 8600 4600
 $Comp
 L Device:C_Small C1
 U 1 1 60578BC7
@@ -499,16 +492,12 @@ Wire Wire Line
 	8150 5950 8150 6700
 Text Label 5900 6800 0    50   ~ 0
 +3.3v
-Text Label 9800 5150 0    50   ~ 0
-po_batt
 Text Label 9700 5250 0    50   ~ 0
 po_wake
 Text Label 9600 5350 0    50   ~ 0
 po_play
-Text Label 8650 4600 1    50   ~ 0
+Text Label 8600 4050 1    50   ~ 0
 po_reset
-Wire Wire Line
-	8600 4600 9000 4600
 Text Label 2850 6300 1    50   ~ 0
 led1
 Text Label 2850 6650 3    50   ~ 0
@@ -754,10 +743,6 @@ Wire Wire Line
 	5700 5550 6050 5550
 Wire Wire Line
 	2750 5900 2750 6400
-Wire Wire Line
-	8700 4500 8600 4500
-Wire Wire Line
-	8600 4500 8600 4600
 Text Label 8750 4700 1    50   ~ 0
 swclk
 Text Label 8850 4800 1    50   ~ 0
@@ -826,4 +811,28 @@ Text Label 6050 2800 1    50   ~ 0
 NONSTOP_SW
 Text Label 5900 2300 3    50   ~ 0
 NONSTOP_LED
+Wire Wire Line
+	9000 5000 9000 5500
+Wire Wire Line
+	9000 5500 9800 5500
+Wire Wire Line
+	9800 5500 9800 5950
+Text Label 9800 5650 0    50   ~ 0
+po_batt
+Wire Wire Line
+	9400 4150 9800 4150
+Wire Wire Line
+	9800 4150 9800 4900
+Wire Wire Line
+	9800 4900 9500 4900
+Wire Wire Line
+	8900 4600 8900 4150
+Wire Wire Line
+	8900 4150 9100 4150
+Connection ~ 8900 4600
+Wire Wire Line
+	8900 4600 9000 4600
+Wire Wire Line
+	8500 4600 8900 4600
+Connection ~ 9800 4900
 $EndSCHEMATC
