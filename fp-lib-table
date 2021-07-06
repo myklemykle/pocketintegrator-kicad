@@ -7,4 +7,5 @@
   (lib (name icm20600)(type KiCad)(uri ${KIPRJMOD}/icm20600.pretty)(options "")(descr ""))
   (lib (name export)(type KiCad)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/export.pretty")(options "")(descr ""))
   (lib (name exported)(type KiCad)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/exported.pretty")(options "")(descr ""))
+  (lib (name ICM-42605)(type KiCad)(uri ${KIPRJMOD}/ICM-42605)(options "")(descr ""))
 )
