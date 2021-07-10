@@ -7,4 +7,5 @@
   (lib (name 2021-01-16_04-43-04)(type Legacy)(uri ${KIPRJMOD}/2021-01-16_04-43-04.lib)(options "")(descr ""))
   (lib (name ICM-20600)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/icm20600/ICM-20600.lib")(options "")(descr ""))
   (lib (name ICM-42605)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/ICM-42605/ICM-42605.lib")(options "")(descr ""))
+  (lib (name TL3215AF160BQ)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/Switch_E-Switch_TL3215AF160BQ/TL3215AF160BQ.lib")(options "")(descr ""))
 )
