@@ -659,10 +659,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 2700 2350 2700
 Wire Wire Line
-	6050 4450 5600 4450
-Wire Wire Line
-	5600 4450 5600 6350
-Wire Wire Line
 	4150 6700 8150 6700
 Wire Wire Line
 	8050 6550 10150 6550
@@ -831,4 +827,12 @@ Text Label 2950 6900 2    50   ~ 0
 led1
 Text Label 2950 7600 2    50   ~ 0
 led2
+Text Label 4800 4550 0    50   ~ 0
+spi_cs
+Text Label 4650 5550 0    50   ~ 0
+spi_mosi
+Wire Wire Line
+	6050 5450 5600 5450
+Wire Wire Line
+	5600 5450 5600 6350
 $EndSCHEMATC

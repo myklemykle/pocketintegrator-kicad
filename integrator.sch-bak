@@ -824,11 +824,15 @@ nonstop_led
 Text Label 8500 3800 0    50   ~ 0
 po_reset
 Text Label 9600 5350 3    50   ~ 0
-po_wake
+po_play
 Text Label 6500 6700 2    50   ~ 0
 +3.3v
 Text Label 2950 6900 2    50   ~ 0
 led1
 Text Label 2950 7600 2    50   ~ 0
 led2
+Text Label 4800 4550 0    50   ~ 0
+spi_cs
+Text Label 4650 5550 0    50   ~ 0
+spi_mosi
 $EndSCHEMATC
