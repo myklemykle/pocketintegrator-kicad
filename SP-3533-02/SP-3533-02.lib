@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# SP-3533-02
+#
+DEF SP-3533-02 J 0 40 Y Y 1 L N
+F0 "J" -400 225 50 H V L BNN
+F1 "SP-3533-02" -400 -225 50 H V L BNN
+F2 "CUI_SP-3533-02" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F5 "1.01" 0 0 50 H I L BNN "PARTREV"
+F6 "5.0mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F7 "CUI Devices" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 10 0 200 0 -200 N
+P 2 0 0 10 0 -200 -400 -200 N
+P 2 0 0 10 -400 -200 -400 -100 N
+P 2 0 0 10 -400 -100 -400 100 N
+P 2 0 0 10 -400 100 -400 200 N
+P 2 0 0 10 -400 200 0 200 N
+P 2 0 0 10 -400 100 -900 100 N
+P 2 0 0 10 -900 100 -1200 100 N
+P 2 0 0 10 -1200 100 -1400 100 N
+P 2 0 0 10 -400 -100 -900 -100 N
+P 2 0 0 10 -900 -100 -1200 -100 N
+P 2 0 0 10 -1200 -100 -1400 -100 N
+A -1400 0 100 900 2699 0 0 10 N -1400 100 -1400 -100
+P 2 0 0 10 -1200 100 -1200 -100 N
+P 2 0 0 10 -900 100 -900 -100 N
+T 0 -1370 -25 70 0 0 0 T Normal 0 L B
+T 0 -1070 -25 70 0 0 0 R Normal 0 L B
+T 0 -700 -25 70 0 0 0 S Normal 0 L B
+X T 1 100 100 100 L 40 40 0 0 P 
+X S 3 100 -100 100 L 40 40 0 0 P 
+X R 2 100 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

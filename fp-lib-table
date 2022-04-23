@@ -9,4 +9,5 @@
   (lib (name exported)(type KiCad)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/exported.pretty")(options "")(descr ""))
   (lib (name ICM-42605)(type KiCad)(uri ${KIPRJMOD}/ICM-42605)(options "")(descr ""))
   (lib (name TL3215AF160BQ)(type KiCad)(uri ${KIPRJMOD}/Switch_E-Switch_TL3215AF160BQ/TL3215AF160BQ.pretty)(options "")(descr ""))
+  (lib (name SP-3533-02)(type KiCad)(uri ${KIPRJMOD}/SP-3533-02)(options "")(descr ""))
 )
