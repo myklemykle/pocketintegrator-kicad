@@ -1,1 +1,20 @@
+# constant mac irritation:
 .DS_Store
+# Ignore list for KiCAD Projects: https://medium.com/inventhub/better-manage-kicad-projects-using-git-8d06e1310af8
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+# Netlist files (exported from Eeschema)
+*.net
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
