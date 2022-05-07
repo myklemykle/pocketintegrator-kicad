@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Microchip TC1263-3.3VOATR
+#
+DEF TC1263-3.3VOATR U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN 
+F1 "TC1263-3.3VOATR" 0 300 50 H V L CNN 
+F2 "Microchip-TC1263-3.3VOATR-*" 0 400 50 H I L CNN 
+F3 "" 0 500 50 H I L CNN 
+F4 "SOIC127P600-8" 0 600 50 H I L CNN "Code  IPC"
+F5 "revC, Jan-2005" 0 700 50 H I L CNN "Datasheet Version"
+F6 "8-Lead Plastic Small Outline (OA) - Narrow, 3.90mm Body [SOIC]" 0 800 50 H I L CNN "Package Description"
+F7 "revBB, Aug-2009" 0 900 50 H I L CNN "Package Version"
+F8 "IC" 0 1000 50 H I L CNN "category"
+F9 "1500606" 0 1100 50 H I L CNN "ciiva ids"
+F10 "140e8f7c9096bbab" 0 1200 50 H I L CNN "library id"
+F11 "Microchip" 0 1300 50 H I L CNN "manufacturer"
+F12 "SOIC-OA8" 0 1400 50 H I L CNN "package"
+F13 "1300337598" 0 1500 50 H I L CNN "release date"
+F14 "D34B05DC-7E13-4F76-A097-615823745EB9" 0 1600 50 H I L CNN "vault revision"
+F15 "yes" 0 1700 50 H I L CNN "imported"
+DRAW
+X VOUT 1 1000 0 100 L 40 40 1 1 W 
+X GND 2 1000 -500 100 L 40 40 1 1 W 
+X NC 3 1000 -200 100 L 40 40 1 1 P 
+X BYPASS 4 0 -500 100 R 40 40 1 1 P 
+X ~ERROR~ 5 0 -400 100 R 40 40 1 1 O 
+X ~SHDN~ 6 0 -200 100 R 40 40 1 1 I 
+X NC 7 1000 -300 100 L 40 40 1 1 P 
+X VIN 8 0 0 100 R 40 40 1 1 W 
+S 100 100 900 -600 1 1 0 f
+ENDDRAW
+ENDDEF
+#
+# End Library

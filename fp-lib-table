@@ -10,4 +10,6 @@
   (lib (name ICM-42605)(type KiCad)(uri ${KIPRJMOD}/ICM-42605)(options "")(descr ""))
   (lib (name TL3215AF160BQ)(type KiCad)(uri ${KIPRJMOD}/Switch_E-Switch_TL3215AF160BQ/TL3215AF160BQ.pretty)(options "")(descr ""))
   (lib (name SP-3533-02)(type KiCad)(uri ${KIPRJMOD}/SP-3533-02)(options "")(descr ""))
+  (lib (name LSM6DSO32XTR)(type KiCad)(uri ${KIPRJMOD}/LSM6DSO32XTR/footprints.pretty)(options "")(descr ""))
+  (lib (name MCP1501T-18E-RW)(type KiCad)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/MCP1501T-18E-RW/KiCAD/2022-05-07_05-34-42/footprints.pretty")(options "")(descr ""))
 )

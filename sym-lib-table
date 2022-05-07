@@ -9,4 +9,8 @@
   (lib (name ICM-42605)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/ICM-42605/ICM-42605.lib")(options "")(descr ""))
   (lib (name TL3215AF160BQ)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/Switch_E-Switch_TL3215AF160BQ/TL3215AF160BQ.lib")(options "")(descr ""))
   (lib (name SP-3533-02)(type Legacy)(uri ${KIPRJMOD}/SP-3533-02/SP-3533-02.lib)(options "")(descr ""))
+  (lib (name ATSAM4S8BB-MN)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/ATSAM4S8BB-MN/ATSAM4S8BB-MN.lib")(options "")(descr ""))
+  (lib (name 2022-04-26_22-02-23)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/LSM6DSO32XTR/2022-04-26_22-02-23.lib")(options "")(descr ""))
+  (lib (name tc1263)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/IC_Microchip_TC1263-3.3VOATR/eec.lib")(options "")(descr ""))
+  (lib (name 2022-05-07_05-34-42)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/MCP1501T-18E-RW/KiCAD/2022-05-07_05-34-42/2022-05-07_05-34-42.lib")(options "")(descr ""))
 )
