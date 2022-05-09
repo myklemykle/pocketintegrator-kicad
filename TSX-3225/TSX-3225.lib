@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TSX-3225
+#
+DEF TSX-3225 X 0 40 Y N 1 L N
+F0 "X" -100 240 50 H V L BNN
+F1 "TSX-3225" -100 150 50 H V L BNN
+F2 "TSX-3225" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 6 90 0 100 0 N
+P 2 0 0 6 0 0 10 0 N
+P 2 0 0 10 35 60 35 -60 N
+P 2 0 0 10 35 -60 65 -60 N
+P 2 0 0 10 65 -60 65 60 N
+P 2 0 0 10 65 60 35 60 N
+P 2 0 0 10 90 70 90 0 N
+P 2 0 0 10 90 0 90 -70 N
+P 2 0 0 10 10 70 10 0 N
+P 2 0 0 10 10 0 10 -70 N
+P 2 0 0 6 -70 75 -70 100 N
+P 2 0 0 6 -70 100 170 100 N
+P 2 0 0 6 170 100 170 75 N
+P 2 0 0 6 170 -75 170 -100 N
+P 2 0 0 6 -70 -100 170 -100 N
+P 2 0 0 6 -70 -100 -70 -75 N
+X ~ 3 200 0 100 L 40 40 0 0 P 
+X ~ 1 -100 0 100 R 40 40 0 0 P 
+X ~ 4 100 -200 100 U 40 40 0 0 P 
+X ~ 2 0 -200 100 U 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

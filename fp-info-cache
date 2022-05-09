@@ -1,4 +1,11 @@
-19639333183791233
+19655705573079083
+2171750001
+MOLEX_2171750001
+
+
+0
+10
+10
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56216,6 +56223,20 @@ Yellow 5381 Series LED
 0
 2
 2
+LSM6DSO32XTR
+LSM6DSO32XTR
+
+
+0
+14
+14
+MCP1501T-18E-RW
+MCP1501T-18E&slash_RW
+
+
+0
+9
+9
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -77027,6 +77048,13 @@ rotary encoder
 0
 5
 4
+SP-3533-02
+CUI_SP-3533-02
+
+
+0
+3
+3
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -83860,13 +83888,6 @@ resistor
 2
 2
 export
-TL1105VF100Q
-tactile switch vertical through-hole 100nf
-
-0
-4
-4
-export
 Teensy30_31_32_LC
 
 
@@ -83951,13 +83972,6 @@ resistor
 2
 2
 exported
-TL1105VF100Q
-tactile switch vertical through-hole 100nf
-
-0
-4
-4
-exported
 Teensy30_31_32_LC
 
 
@@ -83986,6 +84000,13 @@ PQFN50P250X300X97-14N
 14
 14
 misc
+436333033816
+
+
+0
+5
+4
+misc
 CUI_SJ-3524-SMT
 
 
@@ -83999,6 +84020,34 @@ FSOS8700CQ_PKG
 0
 16
 16
+misc
+mousebite_5mm
+
+
+0
+0
+0
+tc1263
+Microchip-TC1263-3.3VOATR-Level_A
+
+
+0
+8
+8
+tc1263
+Microchip-TC1263-3.3VOATR-Level_B
+
+
+0
+8
+8
+tc1263
+Microchip-TC1263-3.3VOATR-Level_C
+
+
+0
+8
+8
 teensy
 Teensy1.0
 11
@@ -84069,3 +84118,24 @@ Teensy_LC
 0
 39
 39
+tl1105
+TL1105VF100Q
+tactile switch vertical through-hole 100nf
+
+0
+4
+4
+tsx-3225
+TSX-3225
+<b><b>MHz range crystal unit</b><p>Digi-Key: <a href="http://www.digikey.com/product-detail/en/TSX-3225%2016.0000MF18X-AC3/SER3636CT-ND/1825448">SER3636CT-ND</a></p>
+
+0
+4
+4
+usb4105
+GCT_USB4105-GF-A
+
+
+0
+16
+16
