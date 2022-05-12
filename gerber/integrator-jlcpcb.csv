@@ -1,0 +1,30 @@
+0.1uf,"C14,C10,C8,C7,C5,C4,C2,C1",C_0805_2012Metric
+Comment,Designator,Footprint
+1nf,C3,C_0805_2012Metric
+2.2uf,C6,C_0805_2012Metric
+4.7uf,C9,C_0805_2012Metric
+"9pf, 5%","C12,C11",C_0805_2012Metric
+10nf,C13,C_0805_2012Metric
+100uf,"C15,C16",CP_Elec_6.3x5.2
+<300mv Vd Schottky,D1,D_TUMD2
+900mv Vd Schottky,D2,D_0201_0603Metric
+3.5mm trs female connector,"J1,J2",CUI_SJ-3524-SMT
+(IGNORE),"J4,J3",
+USB4105-GF-A,J5,GCT_USB4105-GF-A
+(IGNORE),J6,
+(IGNORE),J7,
+10uh ferrite ,L1,L_0805_2012Metric
+LS_L29K-G1J2-1-Z,"LED1,LED2,led3,LED4",LED_0603_1608Metric
+"SMD Pogo pins 2x6 .254mm spacing, 6mm height",POGO1,813-22-012-30-004101-millmax-pogopins-2x6
+"5,1k","R1,R2",R_0805_2012Metric
+"27ohm, 5%","R3,R7",R_0805_2012Metric
+10k,"R4,R5,R8,R10",R_0805_2012Metric
+4.7k,R6,R_0805_2012Metric
+1 ohm,R9,R_0805_2012Metric
+Side facing tactile squitch 100g <7mm height,"SW1,SW2, SW3",TL1105VF100Q
+Side facing tactile switch 160g <5mm height,SW4,436333033816
+MCP1501T-18E_RW,U1,MCP1501T-18E&slash_RW
+TC1263-3.3VOATR,U2,Microchip-TC1263-3.3VOATR-Level_A
+LSM6DSO32XTR,U3,LSM6DSO32XTR
+MICRICHIP ATSAM4S8BB-MN ARM SAM4 MCU,U4,QFN-64-1EP_9x9mm_P0.5mm_EP6x6mm_ThermalVias
+Crystal,Y1,TSX-3225

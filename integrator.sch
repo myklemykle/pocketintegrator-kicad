@@ -297,7 +297,7 @@ F 3 "~" H 15350 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic_MountingPin:Conn_02x06_Odd_Even_MountingPin POGO1
+L Connector_Generic:Conn_02x06_Odd_Even POGO1
 U 1 1 6011B68E
 P 14600 5800
 F 0 "POGO1" H 14650 6217 50  0000 C CNN
@@ -330,25 +330,14 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresigh
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Schottky_Small D1
-U 1 1 6278B65C
-P 14300 7150
-F 0 "D1" H 14350 7350 50  0000 R CNN
-F 1 "<300mv drop" H 14550 7250 50  0000 R CNN
-F 2 "Diode_SMD:D_TUMD2" V 14300 7150 50  0001 C CNN
-F 3 "~" V 14300 7150 50  0001 C CNN
-	1    14300 7150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:D_Schottky_Small D2
 U 1 1 6278CCAC
-P 14550 7150
-F 0 "D2" H 14550 7350 50  0000 C CNN
-F 1 "900mv drop" H 14550 7250 50  0000 C CNN
-F 2 "Diode_SMD:D_0201_0603Metric" V 14550 7150 50  0001 C CNN
-F 3 "~" V 14550 7150 50  0001 C CNN
-	1    14550 7150
+P 14700 7350
+F 0 "D2" H 14700 7550 50  0000 C CNN
+F 1 "900mv drop" H 14700 7450 50  0000 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" V 14700 7350 50  0001 C CNN
+F 3 "~" V 14700 7350 50  0001 C CNN
+	1    14700 7350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -493,27 +482,13 @@ VReg
 Text GLabel 14400 7700 3    50   BiDi ~ 0
 VReg
 Wire Wire Line
-	14550 7050 14550 6650
+	14700 7250 14700 7200
 Wire Wire Line
-	14550 6650 14400 6650
-Wire Wire Line
-	14550 7250 14550 7600
-Wire Wire Line
-	14550 7600 14400 7600
+	14700 7450 14700 7600
 Wire Wire Line
 	14400 7600 14400 7700
 Wire Wire Line
-	14300 7250 14300 7600
-Wire Wire Line
-	14300 7600 14400 7600
-Connection ~ 14400 7600
-Wire Wire Line
-	14300 7050 14300 6650
-Wire Wire Line
 	14400 6100 14400 6650
-Connection ~ 14400 6650
-Wire Wire Line
-	14300 6650 14400 6650
 $Comp
 L power:Earth #PWR0109
 U 1 1 629EE957
@@ -1056,8 +1031,6 @@ Wire Wire Line
 	6000 6700 6700 6700
 Connection ~ 6000 6550
 Wire Wire Line
-	10800 7400 13750 7400
-Wire Wire Line
 	14900 5800 15600 5800
 Wire Wire Line
 	15600 5800 15600 9200
@@ -1503,8 +1476,6 @@ F 3 "~" H 2950 5900 50  0001 C CNN
 	1    2950 5900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4000 6350 4000 6000
 Connection ~ 4000 6350
 Wire Wire Line
 	4000 6350 4050 6350
@@ -1523,9 +1494,6 @@ Wire Wire Line
 	3700 5800 3800 5700
 Wire Wire Line
 	3700 5800 4000 5800
-Wire Wire Line
-	3700 5800 2950 5800
-Connection ~ 3700 5800
 Text Label 13750 1800 1    50   ~ 0
 tip2
 Text Label 13750 2000 3    50   ~ 0
@@ -1554,7 +1522,7 @@ U 1 1 62E2780D
 P 1450 7700
 F 0 "J5" H 1450 8367 50  0000 C CNN
 F 1 "USB4105-GF-A" H 1450 8276 50  0000 C CNN
-F 2 "GCT_USB4105-GF-A" H 1450 7700 50  0001 L BNN
+F 2 "usb4105:GCT_USB4105-GF-A" H 1450 7700 50  0001 L BNN
 F 3 "" H 1450 7700 50  0001 L BNN
 F 4 "A3" H 1450 7700 50  0001 L BNN "PARTREV"
 F 5 "3.31 mm" H 1450 7700 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
@@ -1725,4 +1693,109 @@ Wire Wire Line
 	8100 8750 7500 8750
 Wire Wire Line
 	8100 8750 8100 8400
+Wire Wire Line
+	14100 6650 14400 6650
+Wire Wire Line
+	14100 6750 14100 6650
+Wire Wire Line
+	14100 7600 14400 7600
+Wire Wire Line
+	14100 6950 14100 7100
+$Comp
+L Device:D_Schottky_Small D1
+U 1 1 6278B65C
+P 14100 6850
+F 0 "D1" H 14150 7050 50  0000 R CNN
+F 1 "<300mv drop" H 14350 6950 50  0000 R CNN
+F 2 "Diode_SMD:D_TUMD2" V 14100 6850 50  0001 C CNN
+F 3 "~" V 14100 6850 50  0001 C CNN
+	1    14100 6850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10800 7400 13750 7400
+$Comp
+L Connector_Generic:Conn_02x02_Counter_Clockwise J7
+U 1 1 62BDDB43
+P 14450 7200
+F 0 "J7" H 14500 6875 50  0000 C CNN
+F 1 "test point" H 14500 6966 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 14450 7200 50  0001 C CNN
+F 3 "~" H 14450 7200 50  0001 C CNN
+	1    14450 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14400 6650 14700 6650
+Connection ~ 14400 6650
+Wire Wire Line
+	14400 7600 14700 7600
+Connection ~ 14400 7600
+Wire Wire Line
+	14150 7100 14100 7100
+Connection ~ 14100 7100
+Wire Wire Line
+	14100 7100 14100 7200
+Wire Wire Line
+	14150 7200 14100 7200
+Connection ~ 14100 7200
+Wire Wire Line
+	14100 7200 14100 7600
+Wire Wire Line
+	14650 7100 14700 7100
+Connection ~ 14700 7100
+Wire Wire Line
+	14700 7100 14700 6650
+Wire Wire Line
+	14650 7200 14700 7200
+Connection ~ 14700 7200
+Wire Wire Line
+	14700 7200 14700 7100
+Wire Wire Line
+	900  800  900  700 
+Wire Wire Line
+	900  700  1500 700 
+Wire Wire Line
+	1500 700  1500 800 
+Wire Wire Line
+	1000 800  1000 650 
+Wire Wire Line
+	1000 650  1600 650 
+Wire Wire Line
+	1600 650  1600 800 
+Wire Wire Line
+	1100 800  1100 600 
+Wire Wire Line
+	1100 600  1700 600 
+Wire Wire Line
+	1700 600  1700 800 
+$Comp
+L Device:C_Small C17
+U 1 1 627DC005
+P 4100 6050
+F 0 "C17" H 4192 6096 50  0000 L CNN
+F 1 "1uf" H 4192 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4100 6050 50  0001 C CNN
+F 3 "~" H 4100 6050 50  0001 C CNN
+	1    4100 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR01
+U 1 1 627DD4E3
+P 4300 5950
+F 0 "#PWR01" H 4300 5700 50  0001 C CNN
+F 1 "Earth" H 4300 5800 50  0001 C CNN
+F 2 "" H 4300 5950 50  0000 C CNN
+F 3 "" H 4300 5950 50  0000 C CNN
+	1    4300 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 6050 4300 5950
+Connection ~ 4000 6050
+Wire Wire Line
+	4000 6050 4000 6000
+Wire Wire Line
+	4000 6050 4000 6350
 $EndSCHEMATC
