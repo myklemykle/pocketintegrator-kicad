@@ -1,3 +1,0 @@
-3DX_CUI_DEVICES_Supplier: CUI Devices
-3DX_CUI_DEVICES_Description: 3.5 mm, Stereo, Right Angle, Surface Mount (SMT), 3 Conductors, 1 Internal Switch, Audio Jack Connector
-3DX_CUI_DEVICES_Model Number: SJ-3524-SMT-TR
