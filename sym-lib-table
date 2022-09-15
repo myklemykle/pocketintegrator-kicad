@@ -17,4 +17,6 @@
   (lib (name tsx-3225)(type Legacy)(uri ${KIPRJMOD}/library/symbols/TSX-3225.lib)(options "")(descr ""))
   (lib (name usb4105)(type Legacy)(uri ${KIPRJMOD}/library/symbols/USB4105-GF-A.lib)(options "")(descr ""))
   (lib (name integrator-rescue)(type Legacy)(uri ${KIPRJMOD}/integrator-rescue.lib)(options "")(descr ""))
+  (lib (name RP2040)(type Legacy)(uri ${KIPRJMOD}/library/symbols/RP2040.lib)(options "")(descr ""))
+  (lib (name ABLS-12.000MHZ-B4-T)(type Legacy)(uri ${KIPRJMOD}/library/symbols/ABLS-12.000MHZ-B4-T.lib)(options "")(descr ""))
 )
