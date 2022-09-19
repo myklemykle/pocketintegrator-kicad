@@ -3,4 +3,5 @@
   (lib (name misc)(type KiCad)(uri ${KIPRJMOD}/library/footprints)(options "")(descr ""))
   (lib (name icm20600)(type KiCad)(uri ${KIPRJMOD}/library/footprints/icm20600.pretty)(options "")(descr ""))
   (lib (name tc1263)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Microchip-TC1263)(options "")(descr ""))
+  (lib (name "RPi misc")(type KiCad)(uri ${KIPRJMOD}/library/footprints/RPi_Pico.pretty)(options "")(descr ""))
 )
