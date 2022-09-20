@@ -1509,9 +1509,7 @@ $EndComp
 Wire Wire Line
 	6950 3550 7150 3550
 Text GLabel 4000 5250 2    50   Output ~ 0
-usb_dneg
-Text GLabel 4000 5150 2    50   Output ~ 0
-usb_dpos
+usb_d-
 Wire Wire Line
 	3900 5250 4000 5250
 Wire Wire Line
@@ -1545,9 +1543,9 @@ Wire Wire Line
 	8900 2900 8900 3250
 Connection ~ 8900 3250
 Text GLabel 9900 5850 2    50   Input ~ 0
-usb_dpos
+usb_d+
 Text GLabel 9900 5950 2    50   Input ~ 0
-usb_dneg
+usb_d-
 Wire Wire Line
 	9800 5850 9900 5850
 Wire Wire Line
@@ -1929,7 +1927,7 @@ F 3 "~" H 10550 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10550 1650 10650 1750
-Text GLabel 10500 2250 0    50   Input ~ 0
+Text GLabel 10100 2300 0    50   Input ~ 0
 VAref
 Wire Wire Line
 	14750 2150 14750 2400
@@ -1938,7 +1936,7 @@ AGnd
 Text GLabel 12950 2650 0    50   BiDi ~ 0
 AGnd
 Wire Wire Line
-	10500 2250 12050 2250
+	10500 2250 11350 2250
 Connection ~ 12050 2250
 Wire Wire Line
 	12050 2250 12050 2350
@@ -2262,7 +2260,7 @@ AGnd
 Text GLabel 4150 2650 2    50   BiDi ~ 0
 AGnd
 Wire Wire Line
-	6800 2250 5050 2250
+	6800 2250 5950 2250
 Connection ~ 5050 2250
 Wire Wire Line
 	5050 2250 4950 2400
@@ -2459,7 +2457,7 @@ Wire Wire Line
 	7250 9500 8750 9500
 Text GLabel 7250 5550 0    50   Output ~ 0
 led4
-Text GLabel 7250 5950 0    50   Output ~ 0
+Text GLabel 9900 7050 2    50   Output ~ 0
 led2
 Text GLabel 7250 5850 0    50   Output ~ 0
 led3
@@ -2486,7 +2484,7 @@ Wire Wire Line
 	10300 7250 10600 7250
 Wire Wire Line
 	9800 7250 10300 7250
-Text GLabel 9900 7050 2    50   Output ~ 0
+Text GLabel 7250 5950 0    50   Output ~ 0
 led1
 Wire Wire Line
 	7250 6150 7400 6150
@@ -2510,9 +2508,9 @@ Wire Wire Line
 	9800 7450 9950 7600
 Wire Wire Line
 	9800 7350 9950 7500
-Text GLabel 9900 6950 2    50   Input ~ 0
-sw1
 Text GLabel 7250 6050 0    50   Input ~ 0
+sw1
+Text GLabel 9900 6950 2    50   Input ~ 0
 sw2
 Text GLabel 7250 5350 0    50   Input ~ 0
 sw3
@@ -2624,9 +2622,9 @@ Wire Wire Line
 Connection ~ 5150 2050
 Wire Wire Line
 	5150 2050 4700 2050
-Text Notes 5700 2900 0    50   ~ 0
+Text Notes 6050 2500 0    50   ~ 0
 experimental\nbypass 1
-Text Notes 10650 3100 0    50   ~ 0
+Text Notes 10850 2500 0    50   ~ 0
 experimental\nbypass 2
 Wire Wire Line
 	10400 8350 11000 8350
@@ -2712,61 +2710,61 @@ NoConn ~ 13500 4500
 $Comp
 L Device:Jumper_NO_Small JP2
 U 1 1 6519BB05
-P 5550 2550
-F 0 "JP2" H 5550 2735 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 5550 2644 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5550 2550 50  0001 C CNN
-F 3 "~" H 5550 2550 50  0001 C CNN
-	1    5550 2550
+P 5850 2550
+F 0 "JP2" H 5850 2650 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 5850 2600 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5850 2550 50  0001 C CNN
+F 3 "~" H 5850 2550 50  0001 C CNN
+	1    5850 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Jumper_NO_Small JP3
 U 1 1 6522255B
-P 6200 2650
-F 0 "JP3" H 6200 2835 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 6200 2744 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6200 2650 50  0001 C CNN
-F 3 "~" H 6200 2650 50  0001 C CNN
-	1    6200 2650
+P 5850 2650
+F 0 "JP3" H 5850 2550 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 5850 2744 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5850 2650 50  0001 C CNN
+F 3 "~" H 5850 2650 50  0001 C CNN
+	1    5850 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 2650 6700 2650
+	5950 2650 6700 2650
 Wire Wire Line
-	6100 2650 5150 2650
+	5750 2650 5150 2650
 Wire Wire Line
-	5200 2550 5450 2550
+	5200 2550 5750 2550
 Wire Wire Line
-	5650 2550 6650 2550
+	5950 2550 6650 2550
 $Comp
 L Device:Jumper_NO_Small JP4
 U 1 1 65302E21
-P 10950 2550
-F 0 "JP4" H 10950 2735 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 10950 2644 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 10950 2550 50  0001 C CNN
-F 3 "~" H 10950 2550 50  0001 C CNN
-	1    10950 2550
+P 11450 2550
+F 0 "JP4" H 11450 2600 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 11450 2644 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11450 2550 50  0001 C CNN
+F 3 "~" H 11450 2550 50  0001 C CNN
+	1    11450 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Jumper_NO_Small JP5
 U 1 1 65302E27
 P 11450 2650
-F 0 "JP5" H 11450 2835 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 11450 2744 50  0000 C CNN
+F 0 "JP5" H 11450 2600 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 11450 2744 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11450 2650 50  0001 C CNN
 F 3 "~" H 11450 2650 50  0001 C CNN
 	1    11450 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 2550 10850 2550
+	10600 2550 11350 2550
 Wire Wire Line
 	10550 2650 11350 2650
 Wire Wire Line
-	11050 2550 11750 2550
+	11550 2550 11750 2550
 Text Notes 4550 8550 0    50   ~ 0
 Agnd connects to Earth here …
 $Comp
@@ -2792,4 +2790,36 @@ Text GLabel 2650 2050 3    50   Output ~ 0
 ring1_out
 Text Label 3950 2250 2    50   ~ 0
 PWM_RR1
+$Comp
+L Device:Jumper_NC_Small JP7
+U 1 1 637D2585
+P 5850 2250
+F 0 "JP7" H 5850 2150 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6100 2200 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5850 2250 50  0001 C CNN
+F 3 "~" H 5850 2250 50  0001 C CNN
+	1    5850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2250 5050 2250
+$Comp
+L Device:Jumper_NC_Small JP8
+U 1 1 639D2998
+P 11450 2250
+F 0 "JP8" H 11450 2150 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 11450 2371 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 11450 2250 50  0001 C CNN
+F 3 "~" H 11450 2250 50  0001 C CNN
+	1    11450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11550 2250 12050 2250
+Text Label 6050 6600 0    50   ~ 0
+xin
+Text Label 6050 7000 0    50   ~ 0
+xout
+Text GLabel 4000 5150 2    50   Output ~ 0
+usb_d+
 $EndSCHEMATC
