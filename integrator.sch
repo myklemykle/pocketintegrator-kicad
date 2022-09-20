@@ -218,12 +218,12 @@ $EndComp
 $Comp
 L Device:D_Schottky_Small D2
 U 1 1 6278CCAC
-P 13800 8400
-F 0 "D2" H 13800 8600 50  0000 C CNN
-F 1 "900mv drop" H 13800 8500 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric" V 13800 8400 50  0001 C CNN
-F 3 "~" V 13800 8400 50  0001 C CNN
-	1    13800 8400
+P 13900 8200
+F 0 "D2" H 13900 8400 50  0000 C CNN
+F 1 "900mv drop" H 13900 8300 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 13900 8200 50  0001 C CNN
+F 3 "~" V 13900 8200 50  0001 C CNN
+	1    13900 8200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -316,9 +316,7 @@ VReg
 Wire Wire Line
 	11450 6100 10850 6150
 Wire Wire Line
-	13800 8300 13800 8250
-Wire Wire Line
-	13800 8500 13800 8650
+	13900 8300 13900 8400
 Wire Wire Line
 	13250 7150 13250 7700
 Text GLabel 1750 7850 0    50   Input ~ 0
@@ -731,19 +729,15 @@ Wire Wire Line
 Wire Wire Line
 	1750 2850 1750 3350
 Connection ~ 2650 3050
-Wire Wire Line
-	13200 7800 13200 7700
-Wire Wire Line
-	13200 8000 13200 8150
 $Comp
 L Device:D_Schottky_Small D1
 U 1 1 6278B65C
-P 13200 7900
-F 0 "D1" H 13250 8100 50  0000 R CNN
-F 1 "<300mv drop" H 13450 8000 50  0000 R CNN
-F 2 "Diode_SMD:D_TUMD2" V 13200 7900 50  0001 C CNN
-F 3 "~" V 13200 7900 50  0001 C CNN
-	1    13200 7900
+P 13100 8200
+F 0 "D1" H 13150 8400 50  0000 R CNN
+F 1 "<300mv drop" H 13350 8300 50  0000 R CNN
+F 2 "Diode_SMD:D_TUMD2" V 13100 8200 50  0001 C CNN
+F 3 "~" V 13100 8200 50  0001 C CNN
+	1    13100 8200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -758,24 +752,6 @@ F 3 "~" H 13550 8250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 13250 7700
-Wire Wire Line
-	13250 8150 13200 8150
-Connection ~ 13200 8150
-Wire Wire Line
-	13200 8150 13200 8250
-Wire Wire Line
-	13250 8250 13200 8250
-Connection ~ 13200 8250
-Wire Wire Line
-	13750 8150 13800 8150
-Connection ~ 13800 8150
-Wire Wire Line
-	13800 8150 13800 7700
-Wire Wire Line
-	13750 8250 13800 8250
-Connection ~ 13800 8250
-Wire Wire Line
-	13800 8250 13800 8150
 Wire Wire Line
 	10200 8550 10200 8450
 Wire Wire Line
@@ -860,9 +836,7 @@ Wire Wire Line
 	3150 6300 3150 6650
 Wire Wire Line
 	3150 6650 3050 6650
-Wire Wire Line
-	13200 8250 13200 8650
-Text GLabel 13800 8650 3    50   Input ~ 0
+Text GLabel 13900 8650 3    50   Input ~ 0
 VReg
 Wire Wire Line
 	2450 4050 2550 3950
@@ -1046,7 +1020,7 @@ F 3 "" H 4450 8500 50  0000 C CNN
 	1    4450 8500
 	1    0    0    -1  
 $EndComp
-Text GLabel 13200 8650 3    50   Output ~ 0
+Text GLabel 13100 8650 3    50   Output ~ 0
 VRaw
 Text GLabel 4450 8150 2    50   Output ~ 0
 VAref
@@ -1632,20 +1606,12 @@ Text GLabel 4950 9500 2    50   Output ~ 0
 imu_int
 Wire Wire Line
 	4150 9500 4950 9500
-Text GLabel 4950 9800 2    50   Output ~ 0
-spi_miso
-Text GLabel 4950 10050 2    50   Output ~ 0
-spi_mosi
 Text GLabel 4950 10200 2    50   Output ~ 0
 spi_clock
 Text GLabel 4950 10350 2    50   Output ~ 0
 spi_cs
 Wire Wire Line
-	4150 9800 4950 9800
-Wire Wire Line
 	2100 10050 4950 10050
-Wire Wire Line
-	4950 10050 4950 10200
 Wire Wire Line
 	2000 10200 4950 10200
 Wire Wire Line
@@ -1687,9 +1653,9 @@ po_wake
 Text GLabel 14100 7150 2    50   Output ~ 0
 po_play
 Wire Wire Line
-	13200 7700 13250 7700
+	13100 7700 13250 7700
 Wire Wire Line
-	13250 7700 13800 7700
+	13250 7700 13900 7700
 Wire Wire Line
 	4600 9400 4850 9400
 Text Label 12100 2050 0    50   ~ 0
@@ -2463,10 +2429,6 @@ Text GLabel 7250 5850 0    50   Output ~ 0
 led3
 Text GLabel 7250 6150 0    50   Input ~ 0
 imu_int
-Text GLabel 7250 6250 0    50   Input ~ 0
-spi_miso
-Text GLabel 7250 6550 0    50   Output ~ 0
-spi_mosi
 Text GLabel 7250 6350 0    50   Output ~ 0
 spi_clock
 Text GLabel 7250 6450 0    50   Output ~ 0
@@ -2489,8 +2451,6 @@ led1
 Wire Wire Line
 	7250 6150 7400 6150
 Wire Wire Line
-	7250 6250 7400 6250
-Wire Wire Line
 	7250 6350 7400 6350
 Wire Wire Line
 	7250 6450 7400 6450
@@ -2512,7 +2472,7 @@ Text GLabel 7250 6050 0    50   Input ~ 0
 sw1
 Text GLabel 9900 6950 2    50   Input ~ 0
 sw2
-Text GLabel 7250 5350 0    50   Input ~ 0
+Text GLabel 7250 4950 0    50   Input ~ 0
 sw3
 Text GLabel 7250 5450 0    50   Input ~ 0
 sw4
@@ -2528,13 +2488,13 @@ Wire Wire Line
 	7250 6050 7400 6050
 Wire Wire Line
 	9800 6950 9900 6950
-Text GLabel 7250 4950 0    50   Output ~ 0
+Text GLabel 7250 5050 0    50   Output ~ 0
 po_swclk
-Text GLabel 7250 5050 0    50   BiDi ~ 0
+Text GLabel 7250 5150 0    50   BiDi ~ 0
 po_swdio
-Text GLabel 7250 5150 0    50   Input ~ 0
-po_swo
 Text GLabel 7250 5250 0    50   Input ~ 0
+po_swo
+Text GLabel 7250 5350 0    50   Input ~ 0
 po_play
 Wire Wire Line
 	7400 4950 7250 4950
@@ -2822,4 +2782,50 @@ Text Label 6050 7000 0    50   ~ 0
 xout
 Text GLabel 4000 5150 2    50   Output ~ 0
 usb_d+
+Text GLabel 7250 6250 0    50   Input ~ 0
+spi_miso
+Wire Wire Line
+	7250 6250 7400 6250
+Text GLabel 4950 9800 2    50   Output ~ 0
+spi_miso
+Wire Wire Line
+	4150 9800 4950 9800
+Text GLabel 4950 10050 2    50   Input ~ 0
+spi_mosi
+Text GLabel 7250 6550 0    50   Output ~ 0
+spi_mosi
+Wire Wire Line
+	13100 8100 13100 8000
+Wire Wire Line
+	13100 8300 13100 8400
+Wire Wire Line
+	13100 8000 13250 8000
+Wire Wire Line
+	13250 8000 13250 8150
+Connection ~ 13100 8000
+Wire Wire Line
+	13100 8000 13100 7700
+Wire Wire Line
+	13250 8250 13250 8400
+Wire Wire Line
+	13250 8400 13100 8400
+Connection ~ 13100 8400
+Wire Wire Line
+	13100 8400 13100 8650
+Wire Wire Line
+	13900 7700 13900 8000
+Wire Wire Line
+	13750 8150 13750 8000
+Wire Wire Line
+	13750 8000 13900 8000
+Connection ~ 13900 8000
+Wire Wire Line
+	13900 8000 13900 8100
+Wire Wire Line
+	13750 8250 13750 8400
+Wire Wire Line
+	13750 8400 13900 8400
+Connection ~ 13900 8400
+Wire Wire Line
+	13900 8400 13900 8650
 $EndSCHEMATC
