@@ -2437,9 +2437,9 @@ Text GLabel 9950 7800 2    50   Output ~ 0
 ring1
 Text GLabel 9950 7700 2    50   Output ~ 0
 tip1
-Text GLabel 9950 7600 2    50   Output ~ 0
-tip2
 Text GLabel 9950 7500 2    50   Output ~ 0
+tip2
+Text GLabel 9950 7600 2    50   Output ~ 0
 ring2
 Connection ~ 10300 7250
 Wire Wire Line
