@@ -1927,7 +1927,7 @@ F 3 "~" H 10550 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10550 1650 10650 1750
-Text GLabel 10100 2300 0    50   Input ~ 0
+Text GLabel 10500 2250 0    50   Input ~ 0
 VAref
 Wire Wire Line
 	14750 2150 14750 2400
