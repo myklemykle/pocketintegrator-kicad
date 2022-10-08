@@ -20,3 +20,5 @@ fp-info-cache
 *.ses
 #https://www.reddit.com/r/KiCad/comments/wxml5j/what_is_fpinfocache/
 fp-info-cache
+gerber
+integrator.net
