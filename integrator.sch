@@ -2151,7 +2151,7 @@ Text GLabel 7250 6050 0    50   Input ~ 0
 sw1
 Text GLabel 9900 6950 2    50   Input ~ 0
 sw2
-Text GLabel 7250 4950 0    50   Input ~ 0
+Text GLabel 7250 5050 0    50   Input ~ 0
 sw3
 Text GLabel 7250 5450 0    50   Input ~ 0
 sw4
@@ -2167,11 +2167,11 @@ Wire Wire Line
 	7250 6050 7400 6050
 Wire Wire Line
 	9800 6950 9900 6950
-Text GLabel 7250 5050 0    50   Output ~ 0
+Text GLabel 7250 5150 0    50   Output ~ 0
 po_swclk
-Text GLabel 7250 5150 0    50   BiDi ~ 0
+Text GLabel 7250 5250 0    50   BiDi ~ 0
 po_swdio
-Text GLabel 7250 5250 0    50   Input ~ 0
+Text GLabel 7250 4950 0    50   Input ~ 0
 po_swo
 Text GLabel 7250 5350 0    50   Input ~ 0
 po_play
