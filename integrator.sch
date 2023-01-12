@@ -600,15 +600,15 @@ Wire Wire Line
 	1750 2850 1750 3350
 Connection ~ 2650 3050
 $Comp
-L Connector_Generic:Conn_02x02_Counter_Clockwise J7
+L Connector_Generic:Conn_01x02 J7
 U 1 1 62BDDB43
-P 13550 8400
-F 0 "J7" H 13600 8150 50  0000 C CNN
-F 1 "test point" H 13600 8550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 13550 8400 50  0001 C CNN
-F 3 "~" H 13550 8400 50  0001 C CNN
-	1    13550 8400
-	-1   0    0    1   
+P 13450 8300
+F 0 "J7" H 13500 8050 50  0000 C CNN
+F 1 "test point" H 13500 8450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13450 8300 50  0001 C CNN
+F 3 "~" H 13450 8300 50  0001 C CNN
+	1    13450 8300
+	1    0    0    -1  
 $EndComp
 Connection ~ 13250 7850
 Wire Wire Line
@@ -2725,9 +2725,6 @@ F 4 "+5.5v  ->  +2.3v" H 14150 8500 50  0000 C CNN "Field4"
 	1    14150 8350
 	0    -1   -1   0   
 $EndComp
-Connection ~ 13750 8750
-Wire Wire Line
-	13750 8400 13750 8750
 $Comp
 L power:Earth #PWR0111
 U 1 1 6574E6FB
@@ -2768,8 +2765,6 @@ Wire Wire Line
 Wire Wire Line
 	14150 9050 14350 9100
 Wire Wire Line
-	14150 8750 13750 8750
-Wire Wire Line
 	14150 8750 14150 8650
 Connection ~ 14150 8750
 $Comp
@@ -2802,19 +2797,10 @@ Wire Wire Line
 	14150 8050 14150 7850
 Connection ~ 14150 7850
 Wire Wire Line
-	13750 7850 13750 8300
-Wire Wire Line
-	13250 7850 13750 7850
-Connection ~ 13750 7850
-Wire Wire Line
-	13750 7850 14150 7850
-Wire Wire Line
 	13250 8750 13500 8750
 Wire Wire Line
 	13500 8750 13500 8800
 Connection ~ 13250 8750
-Wire Wire Line
-	13500 8750 13750 8750
 Connection ~ 13500 8750
 Wire Wire Line
 	13100 8250 13100 7850
@@ -2897,4 +2883,8 @@ Wire Wire Line
 Connection ~ 3500 7150
 Wire Wire Line
 	4300 7150 4400 7150
+Wire Wire Line
+	13500 8750 14150 8750
+Wire Wire Line
+	13250 7850 14150 7850
 $EndSCHEMATC
