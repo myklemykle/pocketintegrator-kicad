@@ -298,10 +298,6 @@ VReg
 Wire Wire Line
 	1800 9200 1900 9200
 Connection ~ 2100 9200
-Text GLabel 11450 6100 2    50   Input ~ 0
-VReg
-Wire Wire Line
-	11450 6100 10850 6150
 Wire Wire Line
 	13250 7150 13250 7450
 $Comp
@@ -767,7 +763,6 @@ Text GLabel 13500 8800 3    50   BiDi ~ 0
 VRaw
 Text GLabel 3700 7500 2    50   Output ~ 0
 VAref
-Connection ~ 10850 6150
 $Comp
 L Device:C_Small C30
 U 1 1 63FF5C8E
@@ -779,26 +774,10 @@ F 3 "~" H 11150 5950 50  0001 C CNN
 	1    11150 5950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:Earth #PWR0113
-U 1 1 63FF5C94
-P 11250 5750
-F 0 "#PWR0113" H 11250 5500 50  0001 C CNN
-F 1 "Earth" H 11250 5600 50  0001 C CNN
-F 2 "" H 11250 5750 50  0000 C CNN
-F 3 "" H 11250 5750 50  0000 C CNN
-	1    11250 5750
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	11150 5850 11250 5750
 Wire Wire Line
 	9800 6050 10750 6050
-Text GLabel 11500 5900 2    50   Output ~ 0
-VInt
-Wire Wire Line
-	11150 6050 11500 5900
-Connection ~ 11150 6050
 Text GLabel 6450 7050 0    50   Input ~ 0
 VInt
 Wire Wire Line
@@ -816,7 +795,6 @@ F 3 "~" H 11000 5650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11000 5750 11250 5750
-Connection ~ 11250 5750
 $Comp
 L Device:C_Small C22
 U 1 1 6412AA65
@@ -1055,21 +1033,6 @@ Wire Wire Line
 Connection ~ 10750 6050
 Wire Wire Line
 	10750 6050 11150 6050
-Text GLabel 11450 6250 2    50   Input ~ 0
-VAref
-$Comp
-L Device:C_Small C31
-U 1 1 6445E520
-P 11300 6400
-F 0 "C31" H 11392 6446 50  0000 L CNN
-F 1 "0.1uf" H 11392 6355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 11300 6400 50  0001 C CNN
-F 3 "~" H 11300 6400 50  0001 C CNN
-	1    11300 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11300 6500 11450 6600
 Wire Wire Line
 	10850 6350 10950 6450
 $Comp
@@ -1376,14 +1339,6 @@ F 3 "" H 6700 6650 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7400 6650 6700 6650
-Text GLabel 12450 6750 0    50   Input ~ 0
-po_reset
-Text GLabel 12450 7050 0    50   Output ~ 0
-po_swo
-Text GLabel 12450 6950 0    50   BiDi ~ 0
-po_swdio
-Text GLabel 12450 6850 0    50   Input ~ 0
-po_swclk
 Text GLabel 14100 6850 2    50   Output ~ 0
 po_wake
 Text GLabel 14100 7150 2    50   Output ~ 0
@@ -2024,15 +1979,10 @@ Text Notes 750  8950 0    60   ~ 0
 ACCELLEROMETER +\nGYROSCOPE
 Text GLabel 4400 7150 2    50   BiDi ~ 0
 AGnd
-Text GLabel 11450 6600 2    50   BiDi ~ 0
-AGnd
 Wire Wire Line
 	9800 6250 11300 6250
 Wire Wire Line
 	11300 6300 11300 6250
-Connection ~ 11300 6250
-Wire Wire Line
-	11300 6250 11450 6250
 $Comp
 L Device:CP1 C15
 U 1 1 6328FFA4
@@ -2887,4 +2837,54 @@ Wire Wire Line
 	13500 8750 14150 8750
 Wire Wire Line
 	13250 7850 14150 7850
+Connection ~ 11300 6250
+Connection ~ 11250 5750
+Connection ~ 11150 6050
+Connection ~ 10850 6150
+Wire Wire Line
+	11300 6250 11450 6250
+Text GLabel 11450 6600 2    50   BiDi ~ 0
+AGnd
+Text GLabel 12450 6850 0    50   Input ~ 0
+po_swclk
+Text GLabel 12450 6950 0    50   BiDi ~ 0
+po_swdio
+Text GLabel 12450 7050 0    50   Output ~ 0
+po_swo
+Text GLabel 12450 6750 0    50   Input ~ 0
+po_reset
+Wire Wire Line
+	11300 6500 11450 6600
+$Comp
+L Device:C_Small C31
+U 1 1 6445E520
+P 11300 6400
+F 0 "C31" H 11392 6446 50  0000 L CNN
+F 1 "0.1uf" H 11392 6355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11300 6400 50  0001 C CNN
+F 3 "~" H 11300 6400 50  0001 C CNN
+	1    11300 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 11450 6250 2    50   Input ~ 0
+VAref
+Wire Wire Line
+	11150 6050 11500 5900
+Text GLabel 11500 5900 2    50   Output ~ 0
+VInt
+$Comp
+L power:Earth #PWR0113
+U 1 1 63FF5C94
+P 11250 5750
+F 0 "#PWR0113" H 11250 5500 50  0001 C CNN
+F 1 "Earth" H 11250 5600 50  0001 C CNN
+F 2 "" H 11250 5750 50  0000 C CNN
+F 3 "" H 11250 5750 50  0000 C CNN
+	1    11250 5750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	11450 6100 10850 6150
+Text GLabel 11450 6100 2    50   Input ~ 0
+VReg
 $EndSCHEMATC
