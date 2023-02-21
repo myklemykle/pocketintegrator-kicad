@@ -20,5 +20,6 @@
   (lib (name RP2040)(type Legacy)(uri ${KIPRJMOD}/library/symbols/RP2040.lib)(options "")(descr ""))
   (lib (name ABLS-12.000MHZ-B4-T)(type Legacy)(uri ${KIPRJMOD}/library/symbols/ABLS-12.000MHZ-B4-T.lib)(options "")(descr ""))
   (lib (name NL27WZ16DTT1G)(type Legacy)(uri ${KIPRJMOD}/library/symbols/NL27WZ16DTT1G.lib)(options "")(descr ""))
-  (lib (name XC6415)(type Legacy)(uri "/Volumes/External/mykle/Documents/Pocket Integrator/kicad/library/symbols/XC6415.lib")(options "")(descr ""))
+  (lib (name XC6415)(type Legacy)(uri ${KIPRJMOD}/library/symbols/XC6415.lib)(options "")(descr ""))
+  (lib (name XC6501D331NR-G)(type Legacy)(uri ${KIPRJMOD}/library/symbols/XC6501D331NR-G.lib)(options "")(descr ""))
 )
