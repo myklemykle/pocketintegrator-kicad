@@ -509,7 +509,6 @@ F 3 "~" H 13800 8400 50  0001 C CNN
 	1    13800 8400
 	-1   0    0    1   
 $EndComp
-Connection ~ 13250 7850
 Wire Wire Line
 	5300 -6550 5900 -6550
 $Comp
@@ -2222,8 +2221,6 @@ $EndComp
 Wire Wire Line
 	13100 7450 13250 7450
 Connection ~ 13250 7450
-Wire Wire Line
-	13250 7450 13250 7850
 $Comp
 L Device:CP1 C16
 U 1 1 6387E9CB
@@ -2264,6 +2261,10 @@ F 0 "Y1" H 5600 7068 50  0000 C CNN
 F 1 "Crystal" H 5600 6977 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm" H 5600 6800 50  0001 C CNN
 F 3 "~" H 5600 6800 50  0001 C CNN
+F 4 "Abracon" H 5600 6800 50  0001 C CNN "MANUFACTURER"
+F 5 "4.2 mm" H 5600 6800 50  0001 C CNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "02.16.2021" H 5600 6800 50  0001 C CNN "PARTREV"
+F 7 "Manufacturer Recommendations" H 5600 6800 50  0001 C CNN "STANDARD"
 	1    5600 6800
 	0    1    1    0   
 $EndComp
@@ -2294,7 +2295,7 @@ Wire Wire Line
 Wire Wire Line
 	13750 6650 13950 6600
 Wire Wire Line
-	13250 7450 13900 7450
+	13250 7450 13700 7450
 Wire Wire Line
 	13900 7450 13900 6750
 Wire Wire Line
@@ -2405,33 +2406,6 @@ Wire Wire Line
 	3400 6450 3500 6450
 Text Notes 3650 6200 0    60   ~ 0
 +1.8V
-$Comp
-L Device:C_Small C9
-U 1 1 659664DC
-P 14150 7750
-F 0 "C9" H 14242 7796 50  0000 L CNN
-F 1 "1uf ceramic" H 14242 7705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 14150 7750 50  0001 C CNN
-F 3 "~" H 14150 7750 50  0001 C CNN
-	1    14150 7750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR0142
-U 1 1 659664E2
-P 14300 7500
-F 0 "#PWR0142" H 14300 7250 50  0001 C CNN
-F 1 "Earth" H 14300 7350 50  0001 C CNN
-F 2 "" H 14300 7500 50  0000 C CNN
-F 3 "" H 14300 7500 50  0000 C CNN
-	1    14300 7500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	14150 7650 14150 7550
-Wire Wire Line
-	14150 7550 14300 7500
-Connection ~ 14150 7850
 Wire Wire Line
 	13250 8250 13250 7850
 $Comp
@@ -2445,7 +2419,7 @@ F 3 "https://www.vishay.com/docs/95722/vs-10bq015hm3.pdf" V 13250 8350 50  0001 
 	1    13250 8350
 	0    -1   -1   0   
 $EndComp
-Text Label 13250 7700 0    50   ~ 0
+Text Label 13700 7650 0    50   ~ 0
 po_batt
 Wire Wire Line
 	7700 3550 7750 3550
@@ -2861,7 +2835,7 @@ Connection ~ 14150 8750
 Wire Wire Line
 	14150 8750 14150 8450
 Wire Wire Line
-	13250 7850 14000 7850
+	13250 7850 13700 7850
 Wire Wire Line
 	13250 8450 13250 8800
 Wire Wire Line
@@ -2917,4 +2891,12 @@ Text GLabel 12850 5000 0    50   Output ~ 0
 pi_swo
 Wire Wire Line
 	12850 5000 12900 5000
+Wire Wire Line
+	13700 7450 13700 7850
+Connection ~ 13700 7450
+Wire Wire Line
+	13700 7450 13900 7450
+Connection ~ 13700 7850
+Wire Wire Line
+	13700 7850 14000 7850
 $EndSCHEMATC

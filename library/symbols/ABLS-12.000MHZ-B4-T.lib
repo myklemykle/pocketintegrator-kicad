@@ -1,7 +1,5 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
-#(c) SnapEDA 2016 (snapeda.com)
-#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
 #
 # ABLS-12.000MHZ-B4-T
 #
@@ -15,15 +13,15 @@ F5 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
 F6 "Abracon" 0 0 50 H I L BNN "MANUFACTURER"
 F7 "02.16.2021" 0 0 50 H I L BNN "PARTREV"
 DRAW
-P 2 0 0 16 -55 100 55 100 N
-P 2 0 0 16 55 100 55 -100 N
-P 2 0 0 16 55 -100 -55 -100 N
-P 2 0 0 16 -55 100 -55 -100 N
-P 2 0 0 16 92 100 92 -100 N
 P 2 0 0 16 -92 100 -92 -100 N
-X ~ 2 200 0 100 L 40 40 0 0 P 
-X ~ 1 -200 0 100 R 40 40 0 0 P 
+P 2 0 0 16 -55 100 -55 -100 N
+P 2 0 0 16 -55 100 55 100 N
+P 2 0 0 16 55 -100 -55 -100 N
+P 2 0 0 16 55 100 55 -100 N
+P 2 0 0 16 92 100 92 -100 N
+X ~ 1 -200 0 100 R 40 40 0 0 P
+X ~ 3 200 0 100 L 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# End Library
+#End Library
