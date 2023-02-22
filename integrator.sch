@@ -2015,7 +2015,6 @@ NoConn ~ 13750 6950
 NoConn ~ 7400 5650
 NoConn ~ 9800 6450
 NoConn ~ 9800 6550
-NoConn ~ 9800 6850
 NoConn ~ 2150 9300
 NoConn ~ 14750 1950
 NoConn ~ 2550 1950
@@ -2905,4 +2904,8 @@ Text GLabel 12850 4900 0    50   Output ~ 0
 pi_txin
 Wire Wire Line
 	12900 4900 12850 4900
+Text GLabel 9900 6850 2    50   Output ~ 0
+clk_sys_test
+Wire Wire Line
+	9800 6850 9900 6850
 $EndSCHEMATC
