@@ -2858,7 +2858,7 @@ L Device:D_Schottky_Small D2
 U 1 1 648DBA37
 P 13150 5900
 F 0 "D2" H 13200 6100 50  0000 R CNN
-F 1 "<100mv drop" H 13400 6000 50  0000 R CNN
+F 1 "shottky" H 13400 6000 50  0000 R CNN
 F 2 "Diode_SMD:D_0603_1608Metric" V 13150 5900 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/95722/vs-10bq015hm3.pdf" V 13150 5900 50  0001 C CNN
 	1    13150 5900
