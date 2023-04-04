@@ -2154,7 +2154,7 @@ U 1 1 6355B842
 P 8050 10000
 F 0 "JP10" H 8050 9775 50  0000 C CNN
 F 1 "Jumper" H 8050 9866 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8050 10000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 10000 50  0001 C CNN
 F 3 "~" H 8050 10000 50  0001 C CNN
 	1    8050 10000
 	-1   0    0    1   
