@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(5.1.9-0-10_14)*%
-%TF.CreationDate,2023-04-12T21:51:24-07:00*%
+%TF.CreationDate,2023-04-27T17:08:01-07:00*%
 %TF.ProjectId,integrator,696e7465-6772-4617-946f-722e6b696361,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L1,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.9-0-10_14)) date 2023-04-12 21:51:24*
+G04 Created by KiCad (PCBNEW (5.1.9-0-10_14)) date 2023-04-27 17:08:01*
 %MOMM*%
 %LPD*%
 G01*
@@ -85,35 +85,35 @@ D11*
 X133624000Y-126750000D03*
 %TD*%
 D14*
-%TO.P,J6,10*%
+%TO.P,J6 DNC,10*%
 %TO.N,pi_reset*%
 X178219000Y-122320000D03*
-%TO.P,J6,9*%
+%TO.P,J6 DNC,9*%
 %TO.N,Net-(J6-Pad9)*%
 X176949000Y-122320000D03*
-%TO.P,J6,8*%
+%TO.P,J6 DNC,8*%
 %TO.N,pi_txin*%
 X178219000Y-123590000D03*
-%TO.P,J6,7*%
+%TO.P,J6 DNC,7*%
 %TO.N,Net-(D2-Pad2)*%
 X176949000Y-123590000D03*
-%TO.P,J6,6*%
+%TO.P,J6 DNC,6*%
 %TO.N,pi_swo*%
 X178219000Y-124860000D03*
-%TO.P,J6,5*%
+%TO.P,J6 DNC,5*%
 %TO.N,Earth*%
 X176949000Y-124860000D03*
-%TO.P,J6,4*%
+%TO.P,J6 DNC,4*%
 %TO.N,pi_swclk*%
 X178219000Y-126130000D03*
-%TO.P,J6,3*%
+%TO.P,J6 DNC,3*%
 %TO.N,Earth*%
 X176949000Y-126130000D03*
-%TO.P,J6,2*%
+%TO.P,J6 DNC,2*%
 %TO.N,pi_swdio*%
 X178219000Y-127400000D03*
 D15*
-%TO.P,J6,1*%
+%TO.P,J6 DNC,1*%
 %TO.N,Vreg*%
 X176949000Y-127400000D03*
 %TD*%
