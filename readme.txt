@@ -46,8 +46,16 @@ as the sixth column consists only of redundant ground connections.)
 
 FILES:
 
-Pocket Integrator was designed with KiCad version 5, and has not been tested with
-later versions. 
+integrator.*, integrator-cache.*: 
+	KiCad project files.
+	NOTE: Pocket Integrator was designed with KiCad version 5, 
+	and has not been tested with later versions. 
 
-gerber/ contains the exported gerber files for fabrication.
-library/ contains models, symbols and footprints.
+gerber/: 
+	exported gerber files for fabrication.
+
+library/: 
+	models, symbols and footprints used by KiCad.
+
+pins.h: 
+	Documenation of RP2040 pin connections to the rest of the board.
